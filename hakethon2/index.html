@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Poll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Create a Poll</h2>
+
+  <input type="text" id="question" placeholder="Type your question">
+
+  <input type="text" class="opt" placeholder="Option 1">
+  <input type="text" class="opt" placeholder="Option 2">
+  <input type="text" class="opt" placeholder="Option 3">
+  <input type="text" class="opt" placeholder="Option 4">
+
+  <h3>Voting security</h3>
+
+  <select>
+    <option>One vote per IP address</option>
+  </select>
+
+  <div class="row">
+    <span>Block VPN users</span>
+    <label class="switch">
+      <input type="checkbox" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <button id="createPoll">Create poll</button>
+</div>
+
+<script src="createPoll.js"></script>
+</body>
+</html>
